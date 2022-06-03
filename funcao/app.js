@@ -14,3 +14,11 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  function base(){
+    alert('ERRO - 5002 SQLserver BaseDada')
+  }
+
+  function documento(){
+    alert('Documentação Gage indisponível.')
+  }
