@@ -4,54 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="shortcut icon" href="arquivos/imagens/minilogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <title>Qlegis</title>
+    <link rel="stylesheet" href="estilo/inicio.css">
+    <title>Questão</title>
 </head>
 <body>
     
-   <main>
+    <header class="header" id="header">
 
-    <h1 id="tTitulo">Agora falta pouco, estamos ajustando os últimos detalhes!</h1>
+        <a href="#"><img id="logo" src="arquivos/icones/logoQqustao.png" alt="logo"></a>
+
+        <nav id="nav" class="nav">
+
+            <button id="btn-mobile"><img src="arquivos/icones/menu.png" width="20px"></button>
+
+            <ul id="menu" class="menu">
+                <li><a onclick="avisoDeLogin()">QUESTÕES</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">SIMULADOS</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">RESUMAPAS</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">GUIAS</a></li>
+                <li><a href="00_planos/planos.html">PLANOS</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">GRUPOS</a></li>
+
+                <li><a href="00_planos/login.html" id="entra">ENTRAR</a></li>
+                <li><a href="00_planos/planos.html" id="gratis">EXPERIMENTE GRÁTIS</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--====================-->
+
+    <div class="banner">
+
+        <input id="titulo" type="button" value="TITULO">
+
+    </div>
+
+    <div class="sobre">
+        <div class="sober1">
+
+            <div>
+                <h2>+40.000</h2>
+                <p>
+                    Questões de Enfermagem
+                </p>
+            </div>
+
+
+            <div>
+                <h2>+40.000</h2>
+                <p>
+                    Comentários dos professores
+                </p>
+            </div>
+
+            <div>
+                <h2>+40.000</h2>
+                <p>
+                    Mapas mentais de Enfermagem
+                </p>
+            </div>
+
+            <div>
+                <h2>+40.000</h2>
+                <p>
+                    Questões inéditas
+                </p>
+            </div>
+
+            <div>
+                <h2>+40.000</h2>
+                <p>
+                    Simulados inéditos
+                </p>
+            </div>
+
+        </div>
+        <div class="mudar"><p>EU QUERO MUDAR DE VIDA</p></div>
+    </div>
+
+    <h2 class="tTituloM">Por que usar a plataforma Qquestao?</h2>
 
     <section class="flex">
 
-        <div class="cImg">
-
-            <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="arquivos/imagens/qquesta.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto01.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto02.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto03.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto04.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto05.png" alt=""></div>
-        </div>
-        
-        <div class="swiper-pagination"></div>
-      </div>
-
+        <div>
+            <p><strong>Acompanhe seu desempenho</strong></p>
+            <p> Saiba os seus pontos fortes e fracos.</p>
         </div>
 
-        <div class="areabtn">
+        <div>
+            <p><strong>Saiba os assuntos mais cobrados</strong></p>
+            <p> Saiba o que é mais cobrado e controle seus estudos.</p>
+        </div>
 
-            <nav class="nav">
-                <ul>
-                    <li><button onclick="base()">Ver site</button></li>
-                    <li><button onclick="base()">Ver dashboard</button></li>
-                    <li><button onclick="documento()">Ver documentação</button></li>
-                </ul>
-            </nav>
+        <div>
+            <p><strong>Simulados</strong></p>
+            <p>
+                Treine com os melhores simulados <br>
+                 inéditos ou crie seu próprio simulado. <br>
+                 Participe do ranking.
+            </p>
+        </div>
 
+        <div>
+            <p><strong>Resumapas</strong></p>
+            <p>
+                Materiais preparados para <br>
+                economizar o seu tempo e <br>
+                potencializar seu estudo.
+            </p>
+        </div>
+
+        <div>
+            <p><strong>Guias de estudo</strong></p>
+            <p>
+                Questões organizadas <br>
+                conforme os editais <br>
+                publicados. Acesse e Estude.
+            </p>
         </div>
 
     </section>
 
-   </main>
 
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script src="funcao/app.js"></script>
+<div class="espa">
+    
+</div>
+
+<!--======Aviso popup ======-->
+
+<div class="avisoEntra" id="avisoEntra">
+    <div class="avisoEntra2">
+        <h3>Aviso</h3>
+        <p>
+            Para acessar esta opção é preciso entrar com a sua conta!
+        </p>
+
+        <button id="btnEntrar" onclick="irLogin()">ENTRAR</button> <br> <br>
+       <a onclick="fechaAvisoDeLogin()" href="#">cancelar</a>
+
+    </div>
+</div>
+
+<div class="avisoErro" id="avisoErro">
+    <div class="aviso2Erro">
+        <img src="arquivos/icones/Attention_perspective_matte.png">
+        <h3>Estamos sem conexão com o banco de dados!</h3>
+        <p>Neste momento não e possivel</p>
+        
+            <p>acessar sua conta</p>
+            <p>fazer cadastro</p>
+            <p>alterar dados </p>
+            <p>fazer consultas</p> <br>
+            <p id="htd"><strong>Estamos trabalhando para normalizar o sistema</strong></p> <br>
+
+            <button onclick="fecharavisivo()">FECHAR</button>
+    </div>
+</div>
+
+<!--======Aviso popup ======-->
+ 
+    <!--====== Footer ======-->
+
+    <footer class="footer">
+
+        <div class="primeiro">
+            <p>
+                <img src="arquivos/icones/image_2022-02-27_17-21-57.png" width="150px">
+            </p>
+
+            <p onclick="irSobre()">
+                Sobre o Qquestao.com
+            </p>
+
+            <p onclick="irTermos()">
+                Termos de uso
+            </p>
+
+            <p onclick="irDuvidas()">
+                Dúvidas frequentes
+            </p>
+
+            <p onclick="irPlnaos()">
+                Planos
+            </p>
+
+            <p onclick="irAjuda()">
+                Ajuda
+            </p>
+
+            <p id="affst">
+                Ajuda
+            </p>
+
+            <div class="grupo1">
+                <img id="pago" src="arquivos/icones/Rectangle 24.png" alt="">
+
+                <p id="affst2">
+                    Ajuda
+                </p>
+
+            <p id="anima1"><strong>Fale conosco</strong><br>
+                <img onclick="faleConosco()" src="arquivos/icones/email.jpg">
+                <img onclick="avisoLink()" src="arquivos/icones/whastapp.jpg">
+                <img onclick="avisoLink()" src="arquivos/icones/facebook.jpg">
+                <img onclick="avisoLink()" src="arquivos/icones/insta.jpg">
+            </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--====== Footer ======-->
+
+    <script src="funcao/app.js"></script>
 </body>
 </html>

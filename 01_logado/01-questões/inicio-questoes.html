@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Qquestão</title>
+</head>
+<body>
+    
+    <header class="header" id="header">
+
+        <img id="logo" src="arquivos/icones/logoQqustao.png">
+
+        <div class="opcs">
+
+            
+                <button id="planoUser" type="button" class="btn btn-secondary btn-sm">PLANO ATUAL: GRÁTIS</button>
+    
+
+        <img onclick="temas()" src="arquivos/icones/temas.png">
+        <img onclick="ajuda()" id="ajuda" src="arquivos/icones/ajuda.png">
+        <img onclick="chamaNotifi()" class="notiAni" src="arquivos/icones/notificacao.png">
+
+       
+
+        <div class="perfilUser">
+            <img id="fotoUser" src="arquivos/icones/perfil.png">
+            <div class="dropdown">
+                
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Olá, Usuario
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Minha conta</a></li>
+                  <li><a class="dropdown-item" href="#">Meu desempenho</a></li>
+                  <li><a class="dropdown-item" href="#">Meus pagamentos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+              </div>
+
+        </div>
+        
+        <img id="btn-mobile" class="btn-mobile" onclick="chamaMenu()" src="arquivos/icones/menu.png">
+        </div>
+        
+    </header>
+
+        <nav class="nav" id="nav">
+
+            <ul id="menu" class="menu">
+                <li><a id="linka" href="../00-inicioLogado/logado.html">INÍCIO</a></li>
+    
+                <li><a id="linka" href="../01-questões/inicio-questoes.html">QUESTÕES</a></li>
+    
+                <li><a id="linka" href="../02-pastas/inicio-pastas.html">PASTAS</a></li>
+    
+                <li><a id="linka" href="../03-simulados/inicio-simulados.html">SIMULADOS</a></li>
+    
+                <li><a id="linka" href="../04-mapas/inicio-mapas.html">MAPAS</a></li>
+    
+                <li><a id="linka" href="../05-guias/inicio-guias.html">GUIAS</a></li>
+    
+                <li><a id="linka" href="../06-desempenhos/inicio-desempenho.html">DESEMPENHO</a></li>
+                
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            CONCURSOS
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Disciplinas</a></li>
+                          <li><a class="dropdown-item" href="#">Assuntos</a></li>
+                          <li><a class="dropdown-item" href="../10-bancas/inicio-bancas.html">Bancas</a></li>
+                        </ul>
+                      </div>
+                </li>
+
+                <li><a id="linka" href="../07-gupos/inicio-grupos.html">GRUPOS</a></li>
+            </ul>
+
+        </nav>
+
+    
+
+    <div class="notif" id="notif">
+        <div class="notif2">
+
+            <div class="notifi3">
+
+                <h2>Notificações </h2>
+
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+
+            </div>
+            
+        </div>
+        <div onclick="fechaNotifi()" class="fechanotif"><p>FECHAR</p></div>
+    </div>
+
+
+<!--===== Conteudo ======-->
+
+<div class="local">
+    <div>
+        <p>Início / Questões</p>
+        <h3>Questões de Concursos</h3>
+    </div>
+
+    <div> <!--onclick="Irfiltros()-->
+        <button id="abrirFiltros">Abrir filtros <img src="arquivos/icones/setaCima.png" > </button>
+    </div>
+</div>
+
+<br>
+
+<div id="filtroNav" >
+
+    <main class="cPrincipal" id="cPrincipal">
+
+        <div class="areaDeOpc">
+    
+            <div class="areaBusca">
+                <input type="text" name="buscaD" id="buscaD" placeholder="Palavra chave"> <button><img src="arquivos/icones/lupaWilt.png"></button>
+            </div>
+    
+    
+            <div class="opcTitulos">
+                <p>Disciplina <img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Assunto<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Banca<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Órgão<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Cargo<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Ano<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Área<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Escolaridade<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Formação<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+            <div class="opcTitulos">
+                <p>Opções<img src="arquivos/icones/setaDiretia.png"></p>
+            </div>
+    
+        </div>
+    
+    
+        <div class="marcaOpcs">
+    
+            <div class="marcaBuscas">
+                <div class="buscasDisciplinas">
+                    <input type="text" name="buscaDisciplina" id="buscaDisciplina" placeholder="Busca rápida">
+                <button id="btnBuscaDis"><img src="arquivos/icones/lupa.png"></button>
+                </div>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Administração de Recursos Materiais </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Administração Financeira e Orçamentária </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Algoritmos e Estrutura de Dados </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Contabilidade de Instituições Financeiras e Atuariais </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Enfermagem </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Engenharia Ambiental e Sanitária </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Engenharia de Transportes e Trânsitos </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Gestão de Saúde e Administração Hospitalar </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Administração de Recursos Materiais </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> História e Geografia de Estados e Munícipios </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Legislação do SUS </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Noções de Primeiros Socorros </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Português </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Raciocínio Lógico </p>
+    
+                <p><input type="checkbox" name="marcaD" id="marcaD"> Segurança do Trabalho </p>
+    
+            </div>
+    
+        </div>
+    
+        <div class="filtroDisc">
+    
+            <div class="filtor">
+                <div class="filtroTxt">
+                    <div class="quadrado"></div><p>Salvar filtros</p>
+    
+                    <div class="quadrado"></div><p>Abrir filtros</p>
+                </div>
+    
+               <button id="btn-filtros">Filtrar</button>
+            </div>
+    
+        </div>
+    
+    
+    </main>
+    
+    <div class="opcsCaderno">
+    
+        <div>
+            <p>Nome do caderno</p>
+            <input type="text" name="cCaderno" id="dCaderno">
+        </div>
+    
+        <div>
+            <p>Pasta de destino</p>
+            <button id="bntopcsCadDrop">Sem classificação
+                <img id="setaBaixoBtn" src="arquivos/icones/setaParaBaixo.png" alt="">
+            </button>
+        </div>
+    
+        <div>
+            <p><input type="checkbox" name="criarCad" id="ciarCad ">Criar cadernos em sequência</p>
+            <button>CRIAR CADERNO</button>
+        </div>
+
+    
+    </div>
+
+</div>
+
+
+<main class="contDisciplinas">
+
+    <div class="opcsCabecario">
+        <div class="enunciados">
+            <h4>Questão 5 de  46.375</h4>
+            <p> [1 Resolvidas, <strong id="acertos">1 Acertos</strong> e <strong id="errosU">0 Erros</strong> ]  </p>
+        </div>
+
+        <div class="selectText">
+            <div><img src="arquivos/icones/T +.png"></div>
+            <div><img src="arquivos/icones/T -.png"></div>
+            <p id="tempoQuest">II 00:30:07</p>
+        </div>
+
+    </div>
+
+    <div class="sobreDisciplina">
+        <p>Disciplina:  <mark>Enfermagem</mark></p>
+        <p>Assunto: <mark> Farmacologia, Saúde do Trabalhador</mark></p>
+    </div>
+
+    <div class="subTitulos">
+        <p>ID: <mark>#QQ000007</mark></p>
+
+        <p>Ano: 2021</p>
+
+        <p>Banca: <mark>Instituto Consulplan</mark></p>
+
+        <p> Órgão: TJ-MS      Prova: Instituto Consulplan - 2021 - TJ-MS - Titular de Serviços de Notas e de Registros - Remoção</p>
+</div>
+
+<p id="enunciadoQuestao">
+    – Conforme Resolução – RDC ANVISA nº 15/2012, que dispõe sobre os requisitos de boas práticas para o processamento de produtos para saúde e dá outras providências, assinale a alternativa <strong>INCORRETA</strong>.
+</p>
+
+<div class="questoes">
+    <div class="questoes2"> 
+        <div class="opcsRedondo">
+            <div class="redonto" id="tesouraSelect"><img id="iconeRecorte" src="arquivos/icones/tesoura.png"></div>
+        <div class="redonto">A</div>
+        </div>
+
+        <div>
+            <p>
+                A previsão do Art. 13 do Código Civil veda a realização de cirurgia de transgenitalização/mudança de sexo do masculino para o feminino por escolha do paciente, tendo em vista a categórica redação quanto à necessidade de exigência médica para a autodisposição do corpo.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="questoes2"> 
+        <div class="opcsRedondo">
+            <div class="redonto" id="tesouraSelect"><img id="iconeRecorte" src="arquivos/icones/tesoura.png"></div>
+        <div class="redonto">B</div>
+        </div>
+
+        <div>
+            <p>
+                O ato é anulável quando praticado por erro de caráter essencial, ou seja, que verse sobre o objeto principal ou qualidades substanciais do objeto ou essenciais quanto à pessoa referida na declaração. 
+            </p>
+        </div>
+
+    </div>
+
+    <div class="questoes2"> 
+        <div class="opcsRedondo">
+            <div class="redonto" id="tesouraSelect"><img id="iconeRecorte" src="arquivos/icones/tesoura.png"></div>
+        <div class="redonto">C</div>
+        </div>
+
+        <div>
+            <p>
+                A vacina contra hepatite B é administrada às crianças aos 10 anos de idade junto com o reforço da antitetânica.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="questoes2"> 
+        <div class="opcsRedondo">
+            <div class="redonto" id="tesouraSelect"><img id="iconeRecorte" src="arquivos/icones/tesoura.png"></div>
+        <div class="redonto">D</div>
+        </div>
+
+        <div>
+            <p>
+                Decorrido o prazo a que se refere o Art. 187, §1º, sem oferecimento de denúncia pelo Ministério Público, qualquer credor habilitado poderá representar perante o juiz criminal da jurisdição onde tenha sido celebrado o contrato de que se origina o crédito, requerendo à autoridade judiciária que presida o inquérito falimentar, que poderá nomear o administrador judicial (da recuperação ou da falência) como delegatário dos atos investigativos.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="questoes2"> 
+        <div class="opcsRedondo">
+            <div class="redonto" id="tesouraSelect"><img id="iconeRecorte" src="arquivos/icones/tesoura.png"></div>
+        <div class="redonto">E</div>
+        </div>
+
+        <div>
+            <p>
+                Decorrido o prazo a que se refere o Art. 187, §1º, sem oferecimento de denúncia pelo Ministério Público, qualquer credor habilitado poderá representar perante o juiz criminal da jurisdição onde tenha sido celebrado o contrato de que se origina o crédito, requerendo à autoridade judiciária que presida o inquérito falimentar, que poderá nomear o administrador judicial (da recuperação ou da falência) como delegatário dos atos investigativos.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="btnSquest">
+
+    <button id="respostEnviar">RESPONDER</button>
+
+    <button id="outBtnOps"><img src="arquivos/icones/setaQuestDireita.png"></button>
+    
+    <button id="outBtnOps"><img src="arquivos/icones/btn1.png"></button>
+
+    <button id="outBtnOps"><img src="arquivos/icones/btn2.png"></button>
+
+    <button id="outBtnOps"><img src="arquivos/icones/btn3.png"></button>
+
+    <button id="outBtnOps"><img src="arquivos/icones/btn4.png"></button>
+
+    <button id="outBtnOps"><img src="arquivos/icones/btn5.png"></button>
+
+    <button id="outBtnOps"><img src="arquivos/icones/btn6.png"></button>
+
+    <button id="outBtnOps"><img src="arquivos/icones/btn7.png"></button>
+</div>
+
+<div class="ocsDeAula">
+
+    <button><img src="arquivos/icones/icon01.png">Professor</button>
+
+    <button><img src="arquivos/icones/icon02.png">Comentários</button>
+
+    <button><img src="arquivos/icones/icon03.png">Estatísticas</button>
+
+    <button><img src="arquivos/icones/icon04.png">Favoritar Questão</button>
+
+    <button><img src="arquivos/icones/icon05.png">Notificar Erro</button>
+
+</div>
+
+</main>
+
+<!--===== Conteudo ======-->
+
+    <div class="remover">
+
+    </div>
+
+    <!--====== Footer ======-->
+
+    <footer class="footer">
+
+        <div class="primeiro">
+            <p>
+                <img src="arquivos/icones/image_2022-02-27_17-21-57.png" width="150px">
+            </p>
+
+            <p onclick="irSobre()">
+                Sobre o Qquestao.com
+            </p>
+
+            <p onclick="irTermos()">
+                Termos de uso
+            </p>
+
+            <p onclick="irDuvidas()">
+                Dúvidas frequentes
+            </p>
+
+            <p onclick="irPlnaos()">
+                Planos
+            </p>
+
+            <p onclick="irAjuda()">
+                Ajuda
+            </p>
+
+            <p id="affst">
+                Ajuda
+            </p>
+
+            <div class="grupo1">
+                <img id="pago" src="arquivos/icones/Rectangle 24.png" alt="">
+
+                <p id="affst2">
+                    Ajuda
+                </p>
+
+            <p id="anima1"><strong>Fale conosco</strong><br>
+                <img onclick="faleConosco()" src="arquivos/icones/email.jpg">
+                <img onclick="avisoLink()" src="arquivos/icones/whastapp.jpg">
+                <img onclick="avisoLink()" src="arquivos/icones/facebook.jpg">
+                <img onclick="avisoLink()" src="arquivos/icones/insta.jpg">
+            </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--====== Footer ======-->
+
+    <script src="funcao/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
