@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#tTitulo{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.flex{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cImg{
+    width: 400px;
+}
+
+.areabtn{
+    width: 400px;
+    text-align: center;
+}
+
+.areabtn button{
+    width: 200px;
+    height: 38px;
+    margin: 10px;
+    background: #8E72DC;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+}
+
+.areabtn button:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.46);
+}
+
+.nav{
+    margin-top: 30%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media(max-width: 600px){
+
+    main{
+        padding: 10px;
+    }
+
+    .cImg{
+        width: 100%;
+    }
+    .areabtn{
+        width: 100%;
+    }
+  }
