@@ -18,18 +18,18 @@
         <nav>
             <ul class="menu">
                 <span class="outro">
-                <li><a href="#">QUESTÕES</a></li>
-                <li><a href="#">SIMULADOS</a></li>
-                <li><a href="#">RESUMAPAS</a></li>
-                <li><a href="#">GUIAS</a></li>
-                <li><a href="#">PLANOS</a></li>
-                <li><a href="#">GRUPOS</a></li>
+                <li><a href="#" onclick="chamaaviso()">QUESTÕES</a></li>
+                <li><a href="#" onclick="chamaaviso()">SIMULADOS</a></li>
+                <li><a href="#" onclick="chamaaviso()">RESUMAPAS</a></li>
+                <li><a href="#" onclick="chamaaviso()">GUIAS</a></li>
+                <li><a href="#" onclick="chamaaviso()">PLANOS</a></li>
+                <li><a href="#" onclick="chamaaviso()">GRUPOS</a></li>
                 </span>
 
                 <span class="diferente">
-                    <li><a href="#">ENTRAR</a></li>
-                    <li><a href="#" id="gratis">EXPERIMENTE GRÁTIS</a></li>
-                    <img id="chamaMenu" src="arquivos/icones/menu.png">
+                    <li><a href="#" onclick="chamaaviso()">ENTRAR</a></li>
+                    <li><a href="#" onclick="chamaaviso()" id="gratis">EXPERIMENTE GRÁTIS</a></li>
+                    <img onclick="chamamobile()" id="chamaMenu" src="arquivos/icones/menu.png">
                 </span>
 
             </ul>
@@ -107,16 +107,34 @@
    </div> 
    
 
-   <div class="aviso">
+   <div class="aviso" id="aviso">
     <div class="avisoum">
         <div class="avisodois">
 
-            <h2>Estamos testando algumas atividades!</h2> <br>
+            <h2><img src="arquivos/icones/info.svg">Obrigado por visitar o nosso site!</h2> <br>
             <p>
-                Está ocorrendo alguns testes no sistema Gage, por esse motivo o site está inoperante!
+                Ainda estamos fazendo pequenos ajustes, mas a próxima etapa é liberar o sistema de cadastro, então fique ligado para fazer o cadastro antecipado e receber as nossas novidades.
             </p>
 
             <button onclick="fala()">OK</button>
+
+        </div>
+    </div>
+   </div>
+
+   <div class="menumobile" id="menumobile">
+    <div class="mobileum">
+        <h3>MENU</h3> <div class="fecha" onclick="fechamenumobile()"><h1>x</h1></div>
+        <div class="mobiledois">
+
+            <ul>
+                <li><a href="#" onclick="chamaaviso()"><img src="arquivos/icones/book-alt.svg"> QUESTÕES</a></li>
+                <li><a href="#" onclick="chamaaviso()"><img src="arquivos/icones/simulados.svg"> SIMULADOS</a></li>
+                <li><a href="#" onclick="chamaaviso()"><img src="arquivos/icones/map.svg"> RESUMAPAS</a></li>
+                <li><a href="#" onclick="chamaaviso()"><img src="arquivos/icones/guias.svg"> GUIAS</a></li>
+                <li><a href="#" onclick="chamaaviso()"><img src="arquivos/icones/planos.svg"> PLANOS</a></li>
+                <li><a href="#" onclick="chamaaviso()"><img src="arquivos/icones/grupos.svg"> GRUPOS</a></li>
+            </ul>
 
         </div>
     </div>

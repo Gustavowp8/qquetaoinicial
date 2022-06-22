@@ -31,5 +31,16 @@ setTimeout(() => {
 
 
 function fala(){
-  alert('Aguarde liberação!')
+  aviso.style.display='none'
+}
+
+function chamamobile(){
+  menumobile.style.display='block'
+}
+function fechamenumobile(){
+  menumobile.style.display='none'
+}
+
+function chamaaviso(){
+  aviso.style.display='block'
 }
