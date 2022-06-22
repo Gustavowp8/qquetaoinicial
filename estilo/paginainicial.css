@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header img{
+    width: 150px;
+}
+
+.header {
+    /*background: red;*/
+    display: flex;
+    align-items: center;
+    border-top: 5px solid#8E72DC;
+    border-bottom: 1px solid #DBDBDB;
+    width: 100%;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu a{
+    padding: 0.4rem;
+    color: #3F4A52;
+    text-decoration: none;
+    margin: 10px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.menu a:hover{
+    background: #8E72DC;
+    color: #ffffff;
+}
+
+.diferente{
+    /*background: rebeccapurple;*/
+    display: flex;
+    right: 50px;
+    width: 300px;
+    position: absolute;
+}
+
+#gratis{
+    background: #8E72DC;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#chamaMenu{
+    display: none;
+}
+
+/*===============*/
+
+.capa{
+    background: #C4C4C4;
+    width: 100%;
+    height: 300px;
+}
+#btnTitulo{
+    background: #FFFFFF;
+    border-radius: 30px;
+    margin-top: 18%;
+    margin-left: 5%;
+    width: 322px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.sobreSite{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.textos {
+    margin: auto;
+    margin: 16px;
+    text-align: center;
+}
+.textos h3{
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Open Sans';
+}
+
+.textos p{
+    margin-top: -5px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+#mudar{
+    background: #8E72DC;
+    border-radius: 2px;
+    width: 230px;
+    height: 34px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    margin-top: 2%;
+    border: 1px solid #8E72DC;
+    position: relative;
+    left: 50px;
+}
+
+#sTitulo{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    margin-top: 7%;
+}
+
+.gus{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+
+.gus > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.gus > div p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#sub{
+    margin-bottom: -5px;
+}
+/*===============*/
+
+.aviso{
+    background: #e5e5e594;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.avisoum{
+    max-width: 500px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 15px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.avisodois h2{
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Open Sans';
+}
+
+.avisodois p{
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Open Sans';
+    border: 0.5px solid #686F78;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.avisodois button{
+    background: #1E49E2;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    width: 64px;
+    height: 32px;
+    border: 1px solid #1E49E2;
+    position: relative;
+    left: 86%;
+    
+}
+
+/*================*/
+
+footer{
+    background: #3F4A52;
+    display: flex;
+    padding: 10px;
+}
+#logofooter{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+}
+
+.opcfooter{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.opcfooter a{
+    padding: 0.4rem;
+    margin-left: 45px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.icones{
+    display: flex;
+    margin-left: 100px;
+}
+.contato{
+    
+}
+.contato p{
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: -2px;
+}
+.contato img{
+    width: 20px;
+}
+#pago{
+    width: 100px;
+    margin-right: 20px;
+}
+
+@media(max-width: 700px){
+    .outro{
+        display: none;
+    }
+    #gratis{
+        display: none;
+    }
+    .diferente{
+        width: 100px;
+        position: absolute;
+        right: 20px;
+        margin: auto;
+        margin-top: -10px;
+    }
+
+    #chamaMenu{
+        display: block;
+        margin-top: -4px;
+        width: 25px;
+    }
+    footer{
+        display: block;
+    }
+    #logofooter{
+       margin: auto;
+       padding: 10px;
+    }
+    .contato{
+        
+        padding-left: 30px;
+        margin-right: -15px;
+    }
+    .icones{
+        margin-left: 50px;
+        
+        position: relative;
+    }
+    .contato p{
+        font-weight: 700;
+        font-size: 15px;
+        color: #ffffff;
+        margin-bottom: -2px;
+    }
+    /*==================*/
+    #btnTitulo{
+        display: none;
+    }
+
+    .textos {
+        margin: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #mudar{
+        display: none;
+    }
+    .avisoum{
+        width: auto;
+        margin: 20px;
+        margin-top: 40%;
+    }
+    .avisodois button{
+        left: 78%;
+    }
+}

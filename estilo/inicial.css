@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tela{
+    max-width: 500px;
+    
+    text-align: center;
+    margin: auto;
+    margin-top: 10%
+} 
+
+.tela img{
+    width: 250px;
+}
+
+.text {
+    text-align: center;
+  }
+  
+  #progress {
+    margin: 20px auto;
+    width: 80%;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #ddd;
+  }
+  
+  #bar {
+    background-color: #8E72DC;
+    width: 10px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+  }
+  
+  #loading {
+    font-size: 1.4rem;
+  }
+
+@media(max-width: 600px){
+    .tela img{
+        width: 200px;
+    }
+    .tela{
+        margin-top: 40%;
+    }
+}

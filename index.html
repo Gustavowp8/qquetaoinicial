@@ -3,55 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="arquivos/icones/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="shortcut icon" href="arquivos/imagens/minilogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="estilo/inicial.css">
     <title>Qlegis</title>
 </head>
-<body>
+<body onload="carregar()">
     
-   <main>
-
-    <h1 id="tTitulo">Agora falta pouco, estamos ajustando os últimos detalhes!</h1>
-
-    <section class="flex">
-
-        <div class="cImg">
-
-            <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="arquivos/imagens/qquesta.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto01.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto02.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto03.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto04.png" alt=""></div>
-          <div class="swiper-slide"><img src="arquivos/imagens/qfoto05.png" alt=""></div>
-        </div>
+    <div class="tela">
+        <img src="arquivos/imagens/imgInicial.png"> <br>
         
-        <div class="swiper-pagination"></div>
-      </div>
+        <p class="text">Carregando... </p>
+<div id="progress">
+  <div id="bar"></div>
+</div>
+<p class="text" id="loading"></p>
+    </div>
 
-        </div>
-        
-        <div class="areabtn">
+    
 
-            <nav class="nav">
-                <ul>
-                    <li><button onclick="base()">Ver site</button></li>
-                    <li><button onclick="base()">Ver dashboard</button></li>
-                    <li><button onclick="documento()">Ver documentação</button></li>
-                </ul>
-            </nav>
-
-        </div>
-
-    </section>
-
-   </main>
-
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script src="funcao/app.js"></script>
+    <script src="funcao/app.js"></script>
 </body>
 </html>
