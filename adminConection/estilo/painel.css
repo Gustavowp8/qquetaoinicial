@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(180deg, #ffffff, #05aff259);
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background: #048ABF;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    display: block;
+    padding: 0.2rem;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:hover{
+    border: 1px solid #ffffff46;
+    background: #255D73;
+}
+
+#tTitulo{
+    text-align: center;
+    margin-top: 15px;
+    color: #255D73;
+    margin: 15px;
+}
+
+.card{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.car1 img{
+    
+}
+
+.car1{
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    flex: 1 0 300px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.26);
+    transition: all 0.5s;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.car1:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+#gage{
+    color: #048ABF;
+}
