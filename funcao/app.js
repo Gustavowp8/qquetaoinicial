@@ -44,3 +44,11 @@ function fechamenumobile(){
 function chamaaviso(){
   aviso.style.display='block'
 }
+
+function irFale(){
+  location='falaConosco.html'
+}
+
+function irInicio(){
+  location='paginainicial.html'
+}

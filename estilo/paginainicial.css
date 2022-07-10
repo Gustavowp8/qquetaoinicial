@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans';
 }
 
 .menumobile{
@@ -212,6 +213,67 @@ span{
     width: 30px;
 }
 
+/*====== Outras areas ======*/
+
+.areaContato{
+    margin-left: 60px;
+    color: #000000;
+    font-family: 'Open Sans';
+}
+
+.areaContato p{
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: -2px;
+}
+
+.areaContato h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.areaContato h4{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.tEntrada{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5%;
+    /*background: #00000034;*/
+    padding: 10px;
+}
+
+.tEntrada h5{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tEntrada input{
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    outline: #8E72DC;
+    border: 1px solid #686F78;
+}
+
+#tMsg{
+    width: 100%;
+    outline: #8E72DC;
+    border: 1px solid #686F78;
+    
+}
+
+.tEntrada button{
+    background: #8E72DC;
+    border: 1px solid #8E72DC;
+    color: #ffffff;
+    width: 154px;
+    height: 38px;
+    border-radius: 4px;
+}
 /*================*/
 
 footer{
@@ -222,9 +284,10 @@ footer{
 #logofooter{
     text-decoration: none;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Open Sans';
     color: #ffffff;
+    
 }
 
 .opcfooter{
@@ -241,7 +304,7 @@ footer{
     margin-left: 45px;
     color: #FFFFFF;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 13px;
     text-decoration: none;
     display: block;
 }
@@ -400,5 +463,10 @@ footer{
     }
     .avisodois button{
         left: 78%;
+    }
+    .areaContato{
+        margin-left: 10px;
+        color: #000000;
+        font-family: 'Open Sans';
     }
 }
