@@ -275,6 +275,70 @@ span{
     border-radius: 4px;
 }
 
+/*========= Planos ============*/
+
+#saiba{
+    color: #000000;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+#assine{
+    width: 200px;
+    height: 32px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #8E72DC;
+    border-radius: 4px;
+    border: 1px solid #8E72DC;
+}
+
+.vant{
+    display: flex;
+    align-items: center;
+    background: #AEDDFE;
+    border: 1px solid #35ABFC;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#aviso{
+    font-weight: 300;
+    font-size: 10px;
+    text-align: center;
+}
+
+#adicao{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#semlimite{
+    background: #FFF5E5;
+    border: 1px solid #F1193C;
+}
+
+#padrao{
+    background: #8EE4E5;
+    border: 1px solid #87C5C6;
+}
+
+.facili{
+    text-align: center;
+}
+
+.planos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .ttituloPlanos h2{
     text-align: center;
     font-weight: 300;
@@ -282,12 +346,14 @@ span{
 }
 
 .modelocard{
-    width: 290px;
+    flex: 0 0 280px;
+    margin: 10px;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    padding: 10px;
+    align-items: center;
+    height: 50%;
 }
 
 .bola{
@@ -309,6 +375,7 @@ span{
 .titulocard h3{
     font-weight: 400;
     font-size: 19px;
+    
 }
 
 .cardUm p{
@@ -322,7 +389,7 @@ span{
     background: #AEDDFE;
     border: 1px solid #35ABFC;
     border-radius: 20px;
-    width: 278px;
+    width: auto;
     height: 100px;
     text-align: center;
     padding: 10px;
@@ -341,7 +408,9 @@ span{
     border: 1px solid #35ABFC;
     border-radius: 20px;
     text-align: center;
-    width: 100%;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .preco h2{
