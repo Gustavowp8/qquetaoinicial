@@ -158,7 +158,7 @@ span{
 }
 /*===============*/
 
-.aviso{
+.avisoN{
     display: none;
     background: #e5e5e5c7;
     position: fixed;
@@ -178,6 +178,11 @@ span{
     padding-bottom: 20px;
     margin: auto;
     margin-top: 10%;
+    text-align: right;
+}
+
+.avisoum h2,p{
+    text-align: left;
 }
 
 .avisodois h2{
@@ -203,9 +208,6 @@ span{
     width: 64px;
     height: 32px;
     border: 1px solid #1E49E2;
-    position: relative;
-    left: 86%;
-    
 }
 
 .avisodois img{
