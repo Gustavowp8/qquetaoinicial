@@ -280,6 +280,8 @@ footer{
     background: #3F4A52;
     display: flex;
     padding: 10px;
+    bottom: 0;
+    
 }
 #logofooter{
     text-decoration: none;
@@ -287,7 +289,13 @@ footer{
     font-size: 12px;
     font-family: 'Open Sans';
     color: #ffffff;
+    display: flex;
+    align-items: center;
     
+}
+
+#logofooter p{
+    margin-left: 10px;
 }
 
 .opcfooter{
@@ -313,9 +321,6 @@ footer{
     display: flex;
     margin-left: 100px;
 }
-.contato{
-    
-}
 .contato p{
     font-weight: 700;
     font-size: 15px;
@@ -328,6 +333,12 @@ footer{
 #pago{
     width: 100px;
     margin-right: 20px;
+}
+
+/*=================*/
+
+.espaco{
+    height: 600px;
 }
 
 @media(max-width: 700px){
@@ -352,6 +363,9 @@ footer{
     }
     footer{
         display: block;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
     }
     #logofooter{
        margin: auto;

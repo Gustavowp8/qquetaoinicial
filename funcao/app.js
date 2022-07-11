@@ -46,9 +46,13 @@ function chamaaviso(){
 }
 
 function irFale(){
-  location='falaConosco.html'
+  location='faleConosco.html'
 }
 
 function irInicio(){
   location='paginainicial.html'
+}
+
+function irSobre(){
+  location='Sobre.html'
 }
