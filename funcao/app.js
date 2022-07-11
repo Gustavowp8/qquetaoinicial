@@ -56,3 +56,6 @@ function irInicio(){
 function irSobre(){
   location='Sobre.html'
 }
+function irPannos(){
+  location='Planos.html'
+}
